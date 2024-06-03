@@ -14,8 +14,4 @@ def scraper(url):
         texts = [element.text.strip() for element in elements if len(element.text.strip()) > 30]
         scraped_data.extend(texts)
 
-    scraped_data = pd.Series(scraped_data)
-
-    return scraped_data
-
-scraper(url)
+    sc
