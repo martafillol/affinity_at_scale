@@ -17,5 +17,3 @@ def scraper(url):
     scraped_data = pd.Series(scraped_data)
 
     return scraped_data
-
-scraper(url)
