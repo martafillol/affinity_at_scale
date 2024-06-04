@@ -23,6 +23,7 @@ def scrape(url):
     scraped_data = pd.Series(scraped_data)
     return scraped_data
 
+<<<<<<< HEAD
 scrape_data = scrape(url)
 
 def text_cleaner(text):
@@ -44,3 +45,8 @@ def scraper(lst):
         clt = text_cleaner(scr)
         list.extend(clt)
     return list
+=======
+
+if __name__ == "__main__":
+    print(scraper(url))
+>>>>>>> 113e7b63a8eb91b4340edba99c301d742db4de06
