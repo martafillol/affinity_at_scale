@@ -23,7 +23,6 @@ def scrape(url):
     scraped_data = pd.Series(scraped_data)
     return scraped_data
 
-<<<<<<< HEAD
 scrape_data = scrape(url)
 
 def text_cleaner(text):
@@ -38,15 +37,8 @@ def text_cleaner(text):
 
     return clean_words
 #Use scraper for multiple websites:
-def scraper(lst):
-    list = []
-    for l in lst:
-        scr = scrape(l)
-        clt = text_cleaner(scr)
-        list.extend(clt)
-    return list
-=======
-
-if __name__ == "__main__":
-    print(scraper(url))
->>>>>>> 113e7b63a8eb91b4340edba99c301d742db4de06
+def scraper(url):
+    scr = scrape(url)
+    clt = text_cleaner(scr)
+    words = [each.text for each in clt]
+    return ' '.join(words)
