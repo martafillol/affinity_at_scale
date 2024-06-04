@@ -1,3 +1,8 @@
+bs4
+openai
+sentence-transformers
+nltk
+spacymoji
 wheel
 nbresult
 colorama
@@ -16,4 +21,3 @@ google-cloud-bigquery
 google-cloud-storage
 db-dtypes
 pyarrow
-bs4
