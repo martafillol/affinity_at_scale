@@ -49,3 +49,4 @@ def scraper_results(url_inputs):
         result = scraper(url)
         results.append(result)
     return results
+#
