@@ -36,9 +36,16 @@ def text_cleaner(text):
             clean_words.append(each)
 
     return clean_words
-#Use scraper for multiple websites:
+
 def scraper(url):
     scr = scrape(url)
     clt = text_cleaner(scr)
     words = [each.text for each in clt]
     return ' '.join(words)
+
+def scraper_results(url_inputs):
+    results =[]
+    for url in url_inputs:
+        result = scraper(url)
+        results.append(result)
+    return results
