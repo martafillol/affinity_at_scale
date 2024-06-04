@@ -17,3 +17,7 @@ def scraper(url):
     scraped_data = pd.Series(scraped_data)
 
     return scraped_data
+
+
+if __name__ == "__main__":
+    print(scraper(url))
