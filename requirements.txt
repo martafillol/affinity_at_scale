@@ -5,6 +5,7 @@ nltk
 spacymoji
 wheel
 nbresult
+xmltodict
 colorama
 ipdb
 ipykernel
