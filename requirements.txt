@@ -1,4 +1,5 @@
 bs4
+pandas
 openai
 sentence-transformers
 nltk
